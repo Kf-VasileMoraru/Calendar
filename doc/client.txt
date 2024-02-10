@@ -1,0 +1,7 @@
+-- nvm ls - lista de node pentru a rula diferite versiuni de Angular
+-- https://www.youtube.com/watch?v=yCIti018Srw - install Angular
+-- https://tailwindcss.com/docs/guides/angular 
+-- https://www.youtube.com/watch?v=qycEQBAJrk0 - install TailWind
+
+-- https://www.youtube.com/watch?v=LrGpLcAlOZ8&ab_channel=DecodedFrontend
+-- https://angular.dev/tools/devtools -- devtools
