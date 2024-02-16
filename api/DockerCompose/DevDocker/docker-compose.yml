@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  skinet-api-dev:
+    image: a2259687814/calendar-api:latest
+    container_name: calendar-api
+    restart: always
+    pull_policy: always
+    ports:
+      - 32397:80
+      - 32398:5001
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DOTNET_USE_POLLING_FILE_WATCHER=true
+      - ASPNETCORE_URLS=http://+:80
+
+

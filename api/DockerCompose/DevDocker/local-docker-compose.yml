@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  calendar-api:
+    build:
+        context: ../../
+        dockerfile: Dev.Dockerfile
+    container_name: calendar-api
+    image: calendar-api
+    pull_policy: build
+    restart: always
+    ports:
+      - 32397:80
+      - 32398:5001
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DOTNET_USE_POLLING_FILE_WATCHER=true
+      - ASPNETCORE_URLS=http://+:80
+
+
