@@ -19,8 +19,8 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
 #          rm: true
-          source: "client/dockerDev/docker-compose.yml"
-          target: /skinet-client
+          source: "calendar/DockerCompose/DevDocker/docker-compose.yml"
+          target: /Calendar-Csiusa
 
       - name: Delay for 5s
         run: sleep 5
@@ -37,14 +37,14 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ./client
-          file: ./client/Client-Dev.Dockerfile
+          context: ./calendar
+          file: ./calendar/Dev.Dockerfile
           push: true
           tags: |
-            a2259687814/skinet-front-dev:latest
-            a2259687814/skinet-front-dev:${{ github.sha }}
-          cache-from: type=registry,ref=a2259687814/skinet-front-dev:buildcache
-          cache-to: type=registry,ref=a2259687814/skinet-front-dev:buildcache,mode=max
+            a2259687814/calendar-client-dev:latest
+            a2259687814/calendar-client-dev:${{ github.sha }}
+          cache-from: type=registry,ref=a2259687814/calendar-client-dev:buildcache
+          cache-to: type=registry,ref=a2259687814/calendar-client-dev:buildcache,mode=max
 
       - name: Delay for 5s
         run: sleep 5  
@@ -56,5 +56,5 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /skinet-client/client/dockerDev/
-            docker compose -p skinet-project up -d
+            cd /Calendar-Csiusa/calendar/DockerCompose/DevDocker
+            docker compose -p calendar-project up -d
