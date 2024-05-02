@@ -1,7 +1,18 @@
 -- nvm ls - lista de node pentru a rula diferite versiuni de Angular
 -- https://www.youtube.com/watch?v=yCIti018Srw - install Angular
--- https://tailwindcss.com/docs/guides/angular 
+-- https://www.youtube.com/watch?v=mAiyuApmvNM -- ESLint
+-- https://www.jetbrains.com/help/webstorm/prettier.html -- Prettier
+
+-- https://code-maze.com/angular-material-series/ -- exemplu de Angular Material
+-- https://www.youtube.com/watch?v=sugHzagGLU4&ab_channel=ChauTran
+-- https://github.com/nartc/ng-material-tailwind-theming/blob/master/src/styles/_variables.scss
+-- https://material.angular.io/guide/theming
+
+
+
+-- https://tailwindcss.com/docs/guides/angular
 -- https://www.youtube.com/watch?v=qycEQBAJrk0 - install TailWind
 
 -- https://www.youtube.com/watch?v=LrGpLcAlOZ8&ab_channel=DecodedFrontend
 -- https://angular.dev/tools/devtools -- devtools
+
