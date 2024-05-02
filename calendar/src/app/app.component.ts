@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { DOCUMENT } from '@angular/common';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,21 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'calendar';
+  isDark = false;
+  theme = { ...this.themeService.value };
+
+  // theme = {};
+
+  constructor(
+    @Inject(DOCUMENT) private readonly doc: Document,
+    private readonly themeService: ThemeService,
+  ) {}
+
+  onChange(toggleChange: MatSlideToggleChange) {
+    this.doc.body.classList.toggle('dark', toggleChange.checked);
+  }
+
+  onChangeTheme(form: NgForm) {
+    this.themeService.setTheme(form.value);
+  }
 }
