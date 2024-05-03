@@ -28,13 +28,25 @@ export class ThemeService extends BehaviorSubject<Theme> {
     this.getDefaultTheme();
   }
 
-  setTheme(theme: Theme) {
+  setTheme(theme: Theme): void {
     this.next(theme);
     localStorage.setItem('ngvn-theme', JSON.stringify(theme));
     this._updateThemeVariables(theme);
   }
 
-  private getDefaultTheme() {
+  setDarkTheme(isDark: boolean) {
+    let theme = this.getValue();
+    if (isDark) {
+      theme = {
+        primary: '#673ab7',
+        accent: '#3f51b5',
+        warn: '#e63757',
+      };
+    }
+    this._updateThemeVariables(theme);
+  }
+
+  private getDefaultTheme(): void {
     const storageTheme = localStorage.getItem('ngvn-theme');
     if (storageTheme) {
       this.next(JSON.parse(storageTheme));
@@ -50,7 +62,7 @@ export class ThemeService extends BehaviorSubject<Theme> {
   }
 
   // Users pick colors {primary, accent, warn}
-  private _updateThemeVariables(theme: Theme) {
+  private _updateThemeVariables(theme: Theme): void {
     for (const [name, color] of Object.entries(theme)) {
       const palette = computeColors(color);
       for (const variant of palette) {

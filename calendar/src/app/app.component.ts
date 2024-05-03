@@ -13,8 +13,6 @@ export class AppComponent {
   isDark = false;
   theme = { ...this.themeService.value };
 
-  // theme = {};
-
   constructor(
     @Inject(DOCUMENT) private readonly doc: Document,
     private readonly themeService: ThemeService,
@@ -22,6 +20,7 @@ export class AppComponent {
 
   onChange(toggleChange: MatSlideToggleChange) {
     this.doc.body.classList.toggle('dark', toggleChange.checked);
+    this.themeService.setDarkTheme(toggleChange.checked);
   }
 
   onChangeTheme(form: NgForm) {

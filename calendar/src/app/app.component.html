@@ -1,21 +1,21 @@
 <mat-sidenav-container>
   <mat-sidenav-content>
     <app-header></app-header>
-    <main>
+    <main class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
       <router-outlet></router-outlet>
+      <mat-slide-toggle (change)="onChange($event)" [(ngModel)]="isDark">
+        {{ isDark ? "Dark" : "Light" }}
+      </mat-slide-toggle>
+      <form #form="ngForm" (ngSubmit)="onChangeTheme(form)">
+        <input [(ngModel)]="theme.primary" name="primary" type="color" />
+        <input [(ngModel)]="theme.accent" name="accent" type="color" />
+        <input [(ngModel)]="theme.warn" name="warn" type="color" />
+        <button color="primary" mat-raised-button type="submit">Submit</button>
+      </form>
+      <button mat-raised-button>Material Button</button>
+      <button color="primary" mat-raised-button>Material Button</button>
+      <button color="accent" mat-raised-button>Material Button</button>
+      <button color="warn" mat-raised-button>Material Button</button>
     </main>
-    <mat-slide-toggle (change)="onChange($event)" [(ngModel)]="isDark">
-      {{ isDark ? "Dark" : "Light" }}
-    </mat-slide-toggle>
-    <form #form="ngForm" (ngSubmit)="onChangeTheme(form)">
-      <input [(ngModel)]="theme.primary" name="primary" type="color" />
-      <input [(ngModel)]="theme.accent" name="accent" type="color" />
-      <input [(ngModel)]="theme.warn" name="warn" type="color" />
-      <button color="primary" mat-raised-button type="submit">Submit</button>
-    </form>
-    <button mat-raised-button>Material Button</button>
-    <button color="primary" mat-raised-button>Material Button</button>
-    <button color="accent" mat-raised-button>Material Button</button>
-    <button color="warn" mat-raised-button>Material Button</button>
   </mat-sidenav-content>
 </mat-sidenav-container>

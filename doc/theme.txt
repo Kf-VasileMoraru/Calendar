@@ -1,0 +1,14 @@
+Tema e folosita conform CDK.
+In baza "_variables.scss" se construieste "_palette.scss" ulterior "mat.define-palette" si se creaza "$my-light-theme"
+"$my-dark-theme" se creaza in baza la paleta default, si se insereaza in css clasa "body.dark"
+Ulterior a fost adaugat "ThemeService" cu scopul generarii dinamice "_variables.scss" in baza 3 inpuri - "primary, accent si warn". 
+A fost adaugat TW si definite variabile cu acelasi nume ca "_variables.scss", prin urmare TW si Material sunt sincronizare datorita utilizarii acelorasi variabile.
+Problema e cu Dark-theme deoarece ea foloseste paleta default si nu face referinta la variabile.
+Cand setam Dark-theme, Material era Dark dar TW era Light.
+A fost nevoie sa recalculez culorile si pentru TW DarkTheme 
+LightTheme - Material si TW fac referinta la aceleasi variabile.
+DarkTheme - Material referinta la default paleta, TW referinta la variabile.
+
+ToDo
+1 -E posibil de sincronizat LightTheme si DarkTheme la aceleasi variabile dar cand se seteaza tema, ea mai seteaza si Background, diferite border si spinner
+si la setarea DarkTheme ar trebuie sa faca refinta deja la careva variabile .....
