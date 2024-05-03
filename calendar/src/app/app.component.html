@@ -1,5 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav-content>
+    <app-header></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
     <mat-slide-toggle (change)="onChange($event)" [(ngModel)]="isDark">
       {{ isDark ? "Dark" : "Light" }}
     </mat-slide-toggle>
