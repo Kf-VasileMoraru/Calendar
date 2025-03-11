@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "printWidth": 100,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "semi": true,
+        "singleQuote": true,
+        "arrowParens": "always",
+        "trailingComma": "all"
+      }
+    }
+  ]
+}
