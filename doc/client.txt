@@ -17,3 +17,5 @@
 -- https://www.youtube.com/watch?v=LrGpLcAlOZ8&ab_channel=DecodedFrontend
 -- https://angular.dev/tools/devtools -- devtools
 
+git config --global core.autocrlf input
+git rm --cached -r .
