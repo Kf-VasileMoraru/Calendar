@@ -7,15 +7,15 @@
     color: var(--mat-sys-on-surface);
 
     @include mat.theme(
-        (
-          color: (
-            theme-type: light,
-            primary: mat.$azure-palette,
-            tertiary: mat.$blue-palette,
-          ),
-          typography: Roboto,
-          density: 0,
+      (
+        color: (
+          theme-type: light,
+          primary: mat.$azure-palette,
+          tertiary: mat.$blue-palette,
         ),
+        typography: Roboto,
+        density: 0,
+      ),
       $overrides: (
         // Custom background and foreground colors
         surface: var(--color-slate-50),
@@ -70,7 +70,7 @@
   // ----------------------------------
   // Make Angular Material and Tailwind play nice
   .mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field
-  .mdc-notched-outline__notch {
+    .mdc-notched-outline__notch {
     border-right-style: hidden;
   }
 
@@ -92,6 +92,4 @@
     padding: 0;
     border: none;
   }
-
-  // ----------------------------------
 }

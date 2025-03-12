@@ -1,4 +1,6 @@
-Tema e folosita conform CDK.
+Tema e folosita conform - https://jits.dev/blog/tailwind-v4-play-nice-with-angular-material/
+
+Varianta veche cu M2 si Tailwind3 e folosita conform CDK + . 
 In baza "_variables.scss" se construieste "_palette.scss" ulterior "mat.define-palette" si se creaza "$my-light-theme"
 "$my-dark-theme" se creaza in baza la paleta default, si se insereaza in css clasa "body.dark"
 Ulterior a fost adaugat "ThemeService" cu scopul generarii dinamice "_variables.scss" in baza 3 inpuri - "primary, accent si warn". 
