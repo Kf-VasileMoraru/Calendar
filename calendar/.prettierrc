@@ -2,8 +2,7 @@
   "tabWidth": 2,
   "printWidth": 100,
   "endOfLine": "lf",
-  //  "tailwindStylesheet": "./src/tailwind.css",
-  "tailwindStylesheet": ".src/styles.scss",
+  "tailwindStylesheet": "./src/tailwind.css",
   "overrides": [
     {
       "files": "*.ts",
