@@ -2,6 +2,8 @@
   "tabWidth": 2,
   "printWidth": 100,
   "endOfLine": "lf",
+  //  "tailwindStylesheet": "./src/tailwind.css",
+  "tailwindStylesheet": ".src/styles.scss",
   "overrides": [
     {
       "files": "*.ts",
@@ -12,5 +14,8 @@
         "trailingComma": "all"
       }
     }
+  ],
+  "plugins": [
+    "prettier-plugin-tailwindcss"
   ]
 }

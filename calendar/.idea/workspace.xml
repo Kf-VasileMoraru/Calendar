@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c25269eb-695d-4ad0-af30-6b8b7da29867" name="Changes" comment="install prettier">
+    <list default="true" id="c25269eb-695d-4ad0-af30-6b8b7da29867" name="Changes" comment="add Angular Material">
+      <change beforePath="$PROJECT_DIR$/.idea/calendar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/calendar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741715021356</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="install tailwindcss">
+      <option name="closed" value="true" />
+      <created>1741769859091</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741769859091</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add Angular Material">
+      <option name="closed" value="true" />
+      <created>1741770396379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741770396379</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new 19 project" />
     <MESSAGE value="install prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="install prettier" />
+    <MESSAGE value="install tailwindcss" />
+    <MESSAGE value="add Angular Material" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Angular Material" />
   </component>
 </project>
