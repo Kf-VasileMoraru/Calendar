@@ -66,8 +66,7 @@
 
   // ----------------------------------
   // Make Angular Material and Tailwind play nice
-  .mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field
-    .mdc-notched-outline__notch {
+  .mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field .mdc-notched-outline__notch {
     border-right-style: hidden;
   }
 
