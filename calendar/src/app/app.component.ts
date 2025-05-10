@@ -8,10 +8,7 @@ import { AuthService } from '@auth0/auth0-angular';
   selector: 'app-root',
   imports: [CommonModule, RouterModule, PageLoaderComponent],
   template: `
-    <div
-      class="flex h-full w-full flex-col items-center justify-center"
-      *ngIf="isAuth0Loading$ | async; else auth0Loaded"
-    >
+    <div class="flex h-full w-full flex-col items-center justify-center" *ngIf="isAuth0Loading$ | async; else auth0Loaded">
       <app-page-loader></app-page-loader>
     </div>
     <ng-template #auth0Loaded>

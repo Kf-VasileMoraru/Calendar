@@ -3,12 +3,8 @@ import { PageLayoutComponent } from '../../shared/components/page-layout.compone
 
 @Component({
   selector: 'app-home',
-  imports: [
-    PageLayoutComponent
-  ],
+  imports: [PageLayoutComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

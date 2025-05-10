@@ -5,10 +5,7 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   selector: 'app-nav-bar-tab',
   template: `
-    <a
-      [routerLink]="path"
-      routerLinkActive=""
-    >
+    <a [routerLink]="path" routerLinkActive="">
       {{ label }}
     </a>
   `,

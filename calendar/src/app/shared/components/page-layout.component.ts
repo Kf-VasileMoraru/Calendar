@@ -7,7 +7,7 @@ import { NavBarComponent } from './navigation/desktop/nav-bar.component';
   imports: [PageFooterComponent, NavBarComponent],
   template: `
     <div class="flex h-screen w-full flex-col items-center bg-amber-400">
-      <app-nav-bar class="flex w-full flex-row items-center justify-between "></app-nav-bar>
+      <app-nav-bar class="flex w-full flex-row items-center justify-between"></app-nav-bar>
       <div class="w-full flex-1">
         <ng-content></ng-content>
       </div>

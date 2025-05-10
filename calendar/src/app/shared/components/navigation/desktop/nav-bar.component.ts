@@ -5,17 +5,11 @@ import { NavBarButtonsComponent } from './nav-bar-buttons.component';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [
-    NavBarBrandComponent,
-    NavBarTabsComponent,
-    NavBarButtonsComponent
-  ],
+  imports: [NavBarBrandComponent, NavBarTabsComponent, NavBarButtonsComponent],
   template: `
-      <app-nav-bar-brand></app-nav-bar-brand>
-      <app-nav-bar-tabs></app-nav-bar-tabs>
-      <app-nav-bar-buttons></app-nav-bar-buttons>
+    <app-nav-bar-brand></app-nav-bar-brand>
+    <app-nav-bar-tabs></app-nav-bar-tabs>
+    <app-nav-bar-buttons></app-nav-bar-buttons>
   `,
 })
-export class NavBarComponent {
-
-}
+export class NavBarComponent {}
