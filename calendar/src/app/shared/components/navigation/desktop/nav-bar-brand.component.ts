@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-nav-bar-brand',
   template: `
-    <div class="h-14 pl-5">
+    <div class="h-14">
       <a routerLink="/">
         <img
           class="h-full object-contain"

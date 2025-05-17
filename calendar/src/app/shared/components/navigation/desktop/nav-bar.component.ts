@@ -7,9 +7,9 @@ import { NavBarButtonsComponent } from './nav-bar-buttons.component';
   selector: 'app-nav-bar',
   imports: [NavBarBrandComponent, NavBarTabsComponent, NavBarButtonsComponent],
   template: `
-    <app-nav-bar-brand></app-nav-bar-brand>
+    <app-nav-bar-brand class="pl-5"></app-nav-bar-brand>
     <app-nav-bar-tabs></app-nav-bar-tabs>
-    <app-nav-bar-buttons></app-nav-bar-buttons>
+    <app-nav-bar-buttons class="pr-5"></app-nav-bar-buttons>
   `,
 })
 export class NavBarComponent {}

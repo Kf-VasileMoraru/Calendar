@@ -5,6 +5,5 @@ import { PageLayoutComponent } from '../../shared/components/page-layout.compone
   selector: 'app-home',
   imports: [PageLayoutComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
 })
 export class HomeComponent {}
