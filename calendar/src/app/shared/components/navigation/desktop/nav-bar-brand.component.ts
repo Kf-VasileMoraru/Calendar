@@ -2,18 +2,16 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
+  imports: [RouterLink],
   selector: 'app-nav-bar-brand',
   template: `
     <div class="h-14">
       <a routerLink="/">
-        <img
-          class="h-full object-contain"
-          src="https://cdn.auth0.com/blog/hub/code-samples/hello-world/auth0-logo.svg"
-          alt="Auth0 shield logo"
-        />
+        <img class="h-full object-contain" [src]="loadingImg" alt="Auth0 shield logo" />
       </a>
     </div>
   `,
-  imports: [RouterLink],
 })
-export class NavBarBrandComponent {}
+export class NavBarBrandComponent {
+  loadingImg = 'https://cdn.auth0.com/blog/hub/code-samples/hello-world/auth0-logo.svg';
+}

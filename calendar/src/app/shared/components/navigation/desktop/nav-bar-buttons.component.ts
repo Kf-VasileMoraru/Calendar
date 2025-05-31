@@ -1,55 +1,33 @@
 import { Component, inject } from '@angular/core';
-import { AuthService } from '@auth0/auth0-angular';
-import { AsyncPipe, DOCUMENT } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { NavBarTabComponent } from './nav-bar-tab.component';
+import { AuthService } from '../../../../core/services/auth.service';
 
 @Component({
   selector: 'app-nav-bar-buttons',
   imports: [AsyncPipe, MatButtonModule, NavBarTabComponent],
   template: `
-    <div class="">
-      @if (isAuthenticated$ | async) {
-        <app-nav-bar-tab label="Logout" (click)="handleLogout()"></app-nav-bar-tab>
-      } @else {
-        <app-nav-bar-tab label="Signup" (click)="handleSignUp()"></app-nav-bar-tab>
-        <app-nav-bar-tab label="Login" (click)="handleLogin()"></app-nav-bar-tab>
-      }
-    </div>
+    @if (auth.isAuthenticated$ | async) {
+      <app-nav-bar-tab label="Logout" (click)="handleLogout()"></app-nav-bar-tab>
+    } @else {
+      <app-nav-bar-tab label="Signup" (click)="handleSignUp()"></app-nav-bar-tab>
+      <app-nav-bar-tab label="Login" (click)="handleLogin()"></app-nav-bar-tab>
+    }
   `,
 })
 export class NavBarButtonsComponent {
-  private auth = inject(AuthService);
-  private doc = inject(DOCUMENT);
-  isAuthenticated$ = this.auth.isAuthenticated$;
+  auth = inject(AuthService);
+
   handleSignUp(): void {
-    this.auth.loginWithRedirect({
-      appState: {
-        target: '/',
-      },
-      authorizationParams: {
-        prompt: 'login',
-        screen_hint: 'signup',
-      },
-    });
+    this.auth.handleSignUp();
   }
 
   handleLogout(): void {
-    this.auth.logout({
-      logoutParams: {
-        returnTo: this.doc.location.origin,
-      },
-    });
+    this.auth.handleLogout();
   }
 
   handleLogin(): void {
-    this.auth.loginWithRedirect({
-      appState: {
-        target: '/',
-      },
-      authorizationParams: {
-        prompt: 'login',
-      },
-    });
+    this.auth.handleLogin();
   }
 }

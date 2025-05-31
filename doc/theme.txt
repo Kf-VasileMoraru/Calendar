@@ -14,3 +14,6 @@ DarkTheme - Material referinta la default paleta, TW referinta la variabile.
 ToDo
 1 -E posibil de sincronizat LightTheme si DarkTheme la aceleasi variabile dar cand se seteaza tema, ea mai seteaza si Background, diferite border si spinner
 si la setarea DarkTheme ar trebuie sa faca refinta deja la careva variabile .....
+
+
+sa analizez app-page-loader pentru NgOptimizedImage
