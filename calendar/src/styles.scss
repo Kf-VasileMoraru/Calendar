@@ -9,14 +9,14 @@
 
     @include mat.theme(
       (
-        color: mat.$spring-green-palette,
+        color: mat.$azure-palette,
         typography: Roboto,
         density: -2,
       ),
       $overrides: (
-        // Custom background and foreground colors
-        surface: var(--color-slate-50),
-        on-surface: var(--color-slate-900)
+        // Custom background and foreground colors for example purposes
+        //surface: var(--color-slate-50),
+        //on-surface: var(--mat-sys-primary)
       )
     );
   }

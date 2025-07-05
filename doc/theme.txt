@@ -1,4 +1,7 @@
 Tema e folosita conform - https://jits.dev/blog/tailwind-v4-play-nice-with-angular-material/
+https://www.youtube.com/watch?v=5NSH8VvJH5o - theme overview
+https://www.youtube.com/watch?v=o-C3FImZn4k - light dark
+https://www.youtube.com/watch?v=WAOvOgNntIA - custom color
 
 Varianta veche cu M2 si Tailwind3 e folosita conform CDK - commit 2d089ae0
 In baza "_variables.scss" se construieste "_palette.scss" ulterior "mat.define-palette" si se creaza "$my-light-theme"
