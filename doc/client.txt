@@ -15,7 +15,9 @@
 -- https://www.youtube.com/watch?v=qycEQBAJrk0 - install TailWind
 
 -- https://www.youtube.com/watch?v=LrGpLcAlOZ8&ab_channel=DecodedFrontend
--- https://angular.dev/tools/devtools -- devtools
+-- https://angular.dev/tools/devtools -- 
+
+-- https://developer.auth0.com/resources/guides/spa/angular/basic-authentication/typescript-standalone-components -- exemplu de arhitectura
 
 git config --global core.autocrlf input
 git rm --cached -r .

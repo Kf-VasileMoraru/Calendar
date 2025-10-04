@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { PageLayoutComponent } from '../shared/components/page-layout.component';
 import { RouterLink } from '@angular/router';
+import { MatButton } from '@angular/material/button';
 
 @Component({
-  imports: [PageLayoutComponent, RouterLink],
+  imports: [PageLayoutComponent, RouterLink, MatButton],
   selector: 'app-not-found',
   template: `
     <app-page-layout>
@@ -11,12 +12,7 @@ import { RouterLink } from '@angular/router';
         <h1 class="mb-4 text-5xl font-bold text-red-600">404</h1>
         <h2 class="mb-4 text-2xl font-semibold">Page Not Found</h2>
         <p class="mb-8 text-gray-600">Sorry, the page you are looking for does not exist.</p>
-        <a
-          routerLink="/"
-          class="inline-block rounded bg-blue-400 px-8 py-3 font-medium text-white no-underline transition-colors duration-200 hover:bg-blue-500"
-        >
-          Go to Home
-        </a>
+        <button mat-flat-button color="primary" routerLink="/">Go to Home</button>
       </div>
     </app-page-layout>
   `,
