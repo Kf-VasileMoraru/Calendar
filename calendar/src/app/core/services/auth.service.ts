@@ -1,6 +1,6 @@
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, DOCUMENT } from '@angular/core';
 import { AuthService as Auth0 } from '@auth0/auth0-angular';
-import { DOCUMENT } from '@angular/common';
+
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
