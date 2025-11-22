@@ -11,8 +11,8 @@ import { AsyncPipe } from '@angular/common';
     <app-nav-bar-tab path="/profile" label="Profile"></app-nav-bar-tab>
     <app-nav-bar-tab path="/public" label="Public"></app-nav-bar-tab>
     @if (isAuthenticated$ | async) {
-      <app-nav-bar-tab path="/protected  " label="Protected"></app-nav-bar-tab>
-      <app-nav-bar-tab path="/admin  " label="Admin"></app-nav-bar-tab>
+      <app-nav-bar-tab path="/protected" label="Protected"></app-nav-bar-tab>
+      <app-nav-bar-tab path="/admin" label="Admin"></app-nav-bar-tab>
     }
   `,
 })
