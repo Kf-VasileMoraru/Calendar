@@ -7,11 +7,11 @@ import { RouterLink } from '@angular/router';
   template: `
     <div class="h-14">
       <a routerLink="/">
-        <img class="h-full object-contain" [src]="loadingImg" alt="Auth0 shield logo" />
+        <img class="h-full object-contain" [src]="loadingImg" alt="Logo" />
       </a>
     </div>
   `,
 })
 export class NavBarBrandComponent {
-  loadingImg = 'https://cdn.auth0.com/blog/hub/code-samples/hello-world/auth0-logo.svg';
+  loadingImg = 'assets/images/logo.svg';
 }

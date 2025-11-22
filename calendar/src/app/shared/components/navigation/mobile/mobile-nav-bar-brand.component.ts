@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
 })
 export class MobileNavBarBrandComponent {
   @Output() mobileNavBarBrandClick = new EventEmitter<void>();
-  loadingImg = 'https://cdn.auth0.com/blog/hub/code-samples/hello-world/auth0-logo.svg';
+  loadingImg = 'assets/images/logo.svg';
 
   onMobileNavBarBrandClick(): void {
     this.mobileNavBarBrandClick.emit();
