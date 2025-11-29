@@ -12,7 +12,7 @@ import { MatButton } from '@angular/material/button';
         <h1 class="mb-4 text-5xl font-bold text-red-600">404</h1>
         <h2 class="mb-4 text-2xl font-semibold">Page Not Found</h2>
         <p class="mb-8 text-gray-600">Sorry, the page you are looking for does not exist.</p>
-        <button mat-flat-button color="primary" routerLink="/">Go to Home</button>
+        <button matButton="filled" routerLink="/">Go to Home</button>
       </div>
     </app-page-layout>
   `,

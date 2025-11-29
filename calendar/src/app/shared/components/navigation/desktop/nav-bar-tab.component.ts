@@ -7,11 +7,11 @@ import { MatButton } from '@angular/material/button';
   selector: 'app-nav-bar-tab',
   template: `
     <button
-      mat-button
+      matButton
       [routerLink]="path"
       [routerLinkActiveOptions]="{ exact: true }"
       routerLinkActive="bg-blue-500/10"
-      class="px-4 py-2 font-bold hover:bg-blue-500/10"
+      class="px-4 py-2 font-bold"
     >
       {{ label }}
     </button>

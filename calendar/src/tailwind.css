@@ -3,19 +3,55 @@
 @import "tailwindcss/utilities.css" layer(utilities) important;
 
 @layer base {
-  /*
-    The default border color has changed to `currentColor` in Tailwind CSS v4,
-    so we've added these compatibility styles to make sure everything still
-    looks the same as it did with Tailwind CSS v3.
+  h1 {
+    font: var(--mat-sys-headline-large);
+  }
 
-    If we ever want to remove these styles, we need to add an explicit border
-    color utility to any element that depends on these defaults.
-  */
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+  h2 {
+    font: var(--mat-sys-headline-medium);
+  }
+
+  h3 {
+    font: var(--mat-sys-headline-small);
+  }
+
+  h4 {
+    font: var(--mat-sys-title-large);
+  }
+
+  h5 {
+    font: var(--mat-sys-title-medium);
+  }
+
+  h6 {
+    font: var(--mat-sys-title-small);
+  }
+
+  p {
+    font: var(--mat-sys-body-large);
+  }
+
+  /* Make Angular Material and Tailwind play nice */
+  .mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field .mdc-notched-outline__notch {
+    border-right-style: hidden;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    padding: 0;
+    border: none;
   }
 }
